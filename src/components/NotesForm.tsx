@@ -21,13 +21,15 @@ const NotesForm = ({ setNotes }: setNotesProps) => {
   };
 
   return (
-    <form onSubmit={HandleAdd}>
-      <input
-        type="text"
-        name="tasks"
-        placeholder="🤔 What's your agenda today?"
-      />
-    </form>
+    <div>
+      <form onSubmit={HandleAdd} id="todo-form">
+        <input
+          type="text"
+          name="tasks"
+          placeholder="🤔 What's your agenda today?"
+        />
+      </form>
+    </div>
   );
 };
 
