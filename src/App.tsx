@@ -4,15 +4,16 @@ import Login from "./Pages/Login";
 
 const App = () => {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route element={<Notes />} path="/"></Route>
-          <Route element={<Login />} path="/Login"></Route>
-        </Routes>
-      </BrowserRouter>
-      )
-    </>
+    <div id="app" data-theme="dark">
+      <div id="container">
+        <BrowserRouter>
+          <Routes>
+            <Route element={<Notes />} path="/"></Route>
+            <Route element={<Login />} path="/Login"></Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </div>
   );
 };
 
