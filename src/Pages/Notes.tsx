@@ -25,16 +25,13 @@ const Notes = () => {
 
   return (
     <div>
+      <h1>My Todos ✍🏼📝</h1>
       <div>
         <NotesForm setNotes={setNotes} />
       </div>
       {notes.map((note) => (
         <div id={note.$id} key={note.$id}>
-          <ul>
-            <li>
-              <NoteRender NoteData={note} />
-            </li>
-          </ul>
+          <NoteRender setNotes={setNotes} NoteData={note} />
         </div>
       ))}
     </div>
